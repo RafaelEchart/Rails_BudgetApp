@@ -8,5 +8,8 @@ Rails.application.routes.draw do
   
   get '/categories', to: 'categories#index', as: 'categories_index'
   get '/categories/:category_id', to: 'categories#show', as: 'categories_show'
+  
+  get '/categories/:category_id/transactions', to: 'transactions#index', as: 'transactions_index'
+  get '/categories/:category_id/transactions/new', to: 'transactions#create', as: 'transactions_create'
 
 end
