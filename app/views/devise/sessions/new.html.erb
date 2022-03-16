@@ -1,26 +1,24 @@
-<h2>Log in</h2>
+<body class="sessions_body">
+
+<%= render "partials/sessionsheaders", :message => "sign_in" %>
 
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
   <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+    <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "sessions_input", placeholder: "Email" %>
   </div>
+
 
   <div class="field">
-    <%= f.label :password %><br />
-    <%= f.password_field :password, autocomplete: "current-password" %>
+    <%= f.password_field :password, autocomplete: "current-password", class: "sessions_input", placeholder: "Password"%>
   </div>
 
-  <% if devise_mapping.rememberable? %>
-    <div class="field">
-      <%= f.check_box :remember_me %>
-      <%= f.label :remember_me %>
-    </div>
-  <% end %>
 
-  <div class="actions">
-    <%= f.submit "Log in" %>
-  </div>
+
 <% end %>
+<div class="forgot_container">
+<span >
+Forgot password?
+</span>
+</div>
 
-<%= render "devise/shared/links" %>
+</body>

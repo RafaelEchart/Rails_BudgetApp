@@ -1,4 +1,4 @@
-@import url(//db.onlinewebfonts.com/c/74664495dd5c6bda81a3919d75ed353f?family=Fertigo);
+@import url('http://fonts.cdnfonts.com/css/fertigo');
 
 .splash_screen_body {
     background-color: #f1f3f2;
@@ -6,8 +6,7 @@
 
 .splash_title {
     color: #384047;
-    font-family: "Fertigo";
-
+    font-family: 'Fertigo';
 }
 
 .splash_container {
