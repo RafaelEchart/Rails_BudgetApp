@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   devise_for :users
 
   
-  # root "articles#index"
+  root "splash_screen#index"
 
   get '/', to: 'splash_screen#index', as: 'splash_screen'
   
