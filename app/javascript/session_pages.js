@@ -13,3 +13,8 @@ const submitSignUp = () => {
 const uploadButtonInfo = () => {
     alert("You can paste the URL of your image or the system will generate a image for you")
 }
+
+
+const submitNewCategory = () => {
+    document.getElementById("new_category").submit()
+}

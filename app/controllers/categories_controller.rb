@@ -7,7 +7,12 @@ class CategoriesController < ApplicationController
     def show 
     end
 
-    def menu 
+    def new 
+        @category = Group.new
+    end
+
+    def post 
+    
     end
 
 end

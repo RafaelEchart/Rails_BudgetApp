@@ -1,5 +1,14 @@
 <body class="sessions_body">
 
-<%= render "partials/userheader", :title => "NEW CATEGORY" %>
+<%= render "partials/userheader", :title => "NEW CATEGORY", :page => "new_category" %>
+
+  <%= form_with model: @category, url: categories_post_path(), method: :post, id: "new_category" do |f| %>
+
+  <div class="field">
+    <%= f.text_field :name, autofocus: true, class: "sessions_input", placeholder: "Category Name" %>
+  </div>
+
+
+<% end %>
 
 </body>
