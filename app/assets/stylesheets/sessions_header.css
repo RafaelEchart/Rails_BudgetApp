@@ -13,20 +13,19 @@
   margin-left: 10px;
   cursor: pointer;
   margin-top: 5px;
-
 }
 
 .header_title {
-    color: white;
-    font-family: proxima-nova, sans-serif;
-    font-weight: 100;
+  color: white;
+  font-family: proxima-nova, sans-serif;
+  font-weight: 100;
 }
 
 .header_action {
-    color: ghostwhite;
-    font-family: proxima-nova, sans-serif;
-    font-weight: 100;
-    font-size: 15px;
-    margin-right: 8px;
-    cursor: pointer;
+  color: ghostwhite;
+  font-family: proxima-nova, sans-serif;
+  font-weight: 100;
+  font-size: 15px;
+  margin-right: 8px;
+  cursor: pointer;
 }

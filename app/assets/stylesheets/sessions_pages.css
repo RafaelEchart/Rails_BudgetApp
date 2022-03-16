@@ -1,71 +1,65 @@
 .sessions_body {
-    background-color: #f5f6f8;
+  background-color: #f5f6f8;
 }
 
 .sessions_input {
-    border: 0;
-    padding: 11px;
-    border: 1px solid lightgray;
-    max-width: 600px;
-    min-width: 292px;
-    width: 80%;
+  padding: 11px;
+  border: 1px solid lightgray;
+  max-width: 600px;
+  min-width: 292px;
+  width: 80%;
 }
 
 .sessions_input:focus {
-    outline: none;
+  outline: none;
 }
 
 .sessions_input::placeholder {
-    color: lightgray !important;
+  color: lightgray !important;
 }
 
 .sessions_input-photo {
-    border: 0;
-    padding: 11px;
-    margin-top: 15px;
-
-    
+  border: 0;
+  padding: 11px;
+  margin-top: 15px;
 }
 
 .sessions_input-photo:focus {
-    outline: none;
+  outline: none;
 }
 
 .sessions_input-photo::placeholder {
-    color: lightgray !important;
+  color: lightgray !important;
 }
 
-
-.forgot_container{
- text-align: center;
- margin: 12px;
- color: gray;
- cursor: pointer;
+.forgot_container {
+  text-align: center;
+  margin: 12px;
+  color: gray;
+  cursor: pointer;
 }
 
 .field {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .photo-field {
-    background-color: white;
-    max-width: 622px;
-    min-width: 314px;
-    width: 86%;
-    border: 1px solid lightgray;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding-bottom: 10px;
-
+  background-color: white;
+  max-width: 622px;
+  min-width: 314px;
+  width: 86%;
+  border: 1px solid lightgray;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 10px;
 }
 
 .photo-field img {
-    margin: 15px 0px 0px 20px;
-    border-radius: 26px;
-    border: 1px solid lightgray;
-    padding: 8px;
-    cursor: pointer;
-
+  margin: 15px 0 0 20px;
+  border-radius: 26px;
+  border: 1px solid lightgray;
+  padding: 8px;
+  cursor: pointer;
 }

@@ -1,6 +1,5 @@
 class ApplicationController < ActionController::Base
-
-    before_action :update_allowed_parameters, if: :devise_controller?
+  before_action :update_allowed_parameters, if: :devise_controller?
 
   protected
 
@@ -15,5 +14,4 @@ class ApplicationController < ActionController::Base
       redirect_to root_path
     end
   end
-
 end
