@@ -1,1 +1,25 @@
-all categories will be here
+<body class="sessions_body">
+
+<%= render "partials/userheader", :title => "CATEGORIES" %>
+
+<div class="category_page_container">
+
+
+<div class="total_category_container">
+<div class="total_category_left">
+<ion-icon name="bookmark-outline" class="category_icon"></ion-icon>
+<span class="">Total categories</span>
+</div>
+
+<span class="total_category_number">15</span>
+</div>
+
+
+<div class="bottom_button">
+<div class="button_align">
+  <%= button_to "New Category", categories_new_path, class: "button_style", method: :get%>
+</div>
+</div>
+
+<div>
+</body>
