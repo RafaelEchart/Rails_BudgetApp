@@ -1,3 +1,13 @@
-<h1>
-This is the splash screen
-</h1>
+<body class="splash_screen_body">
+
+<div class="splash_container">
+<h1 class="splash_title">Your Budget</h1>
+<div class="splash_button_container">
+<%= button_to "LOG IN", new_user_session_path, class: "log_in_button" %>
+<%= link_to 'SIGN IN',  new_user_registration_path, class: "sign_up_link" %>
+</div>
+
+
+</div>
+
+</body>

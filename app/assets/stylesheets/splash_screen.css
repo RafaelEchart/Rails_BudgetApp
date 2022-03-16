@@ -1,0 +1,46 @@
+@import url(//db.onlinewebfonts.com/c/74664495dd5c6bda81a3919d75ed353f?family=Fertigo);
+
+.splash_screen_body {
+    background-color: #f1f3f2;
+}
+
+.splash_title {
+    color: #384047;
+    font-family: "Fertigo";
+
+}
+
+.splash_container {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.log_in_button {
+    width: 280px;
+    font-size: 13px;
+    height: 45px;
+    color: white;
+    border: 0;
+    background-color: #3979c3;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.splash_button_container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.sign_up_link {
+    margin-top: 15px;
+    text-decoration: none;
+    color: darkgray;
+    font-family: 'Circular-Loom';
+    font-size: 14px;
+    font-weight: 500;
+}
