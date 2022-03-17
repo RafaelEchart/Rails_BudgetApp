@@ -2,8 +2,13 @@ class TransactionsController < ApplicationController
   before_action :authenticate_user!
 
   def index
+
+    id = params[:category_id]
   
-    @category = Category.find(params[:category_id])
+    @category = Category.find(id)
+
+    @transactions = EntityCategory.where(category_id: id).order(created_at: :desc)
+
     
 
   end

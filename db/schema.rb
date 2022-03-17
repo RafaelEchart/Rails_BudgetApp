@@ -26,13 +26,15 @@ ActiveRecord::Schema[7.0].define(version: 2022_03_15_224221) do
   create_table "entities", force: :cascade do |t|
     t.bigint "user_id"
     t.string "name"
-    t.decimal "amount", precision: 10, scale: 2
+    t.float "amount"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["user_id"], name: "index_entities_on_user_id"
   end
 
   create_table "entity_categories", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
     t.bigint "entity_id"
     t.bigint "category_id"
     t.index ["category_id"], name: "index_entity_categories_on_category_id"
