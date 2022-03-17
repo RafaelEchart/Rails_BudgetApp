@@ -13,20 +13,28 @@ class TransactionsController < ApplicationController
   end
 
   def post
-    p params[:entity][:name]
-    p params[:entity][:amount]
+
 
     @transaction = Entity.new(user_id: current_user.id, name: params[:entity][:name], amount: params[:entity][:amount])
     
     if @transaction.save
-      puts 'transaction created successfully.'
-      # flash[:success] = 'Category created successfully.'
+      @entity_category = EntityCategory.new(entity_id: @transaction.id, category_id: params[:category_id])
+      @entity_category.save
+      flash[:success] = 'Transaction created successfully.'
+      
     else
       p @transaction.errors.full_messages
-      # flash[:error] = 'Error creating Category.'
-      p 'Error creating transactio.'
+      flash[:error] = 'Error creating Transaction.'
+      
     end
-    redirect_to categories_index_path
+    redirect_to transactions_index_path(params[:category_id])
 
   end
+
+  private
+
+  def entity_category_params
+    params.require(:entity).permit(:category_id)
+  end
+
 end
