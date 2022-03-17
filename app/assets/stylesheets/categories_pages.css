@@ -75,3 +75,8 @@
   margin: 10px;
   cursor: pointer;
 }
+
+
+.info_cursor{
+  cursor: help !important;
+}

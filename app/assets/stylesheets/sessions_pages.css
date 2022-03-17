@@ -65,3 +65,11 @@
   padding: 8px;
   cursor: pointer;
 }
+
+.sessions_select {
+  padding: 11px;
+  border: 1px solid lightgray;
+  max-width: 624px;
+  min-width: 316px;
+  width: 84%;
+}
