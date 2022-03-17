@@ -15,3 +15,8 @@ const submitNewCategory = () => {
 const goToCategory = (id) => {
     window.location.href = `/categories/${id}/transactions`
 }
+
+const submitNewTransaction = () => {
+    document.getElementById("new_transaction").submit()
+    
+}

@@ -12,5 +12,6 @@ Rails.application.routes.draw do
   
   get '/categories/:category_id/transactions', to: 'transactions#index', as: 'transactions_index'
   get '/categories/:category_id/transactions/new', to: 'transactions#create', as: 'transactions_create'
+  post '/categories/:category_id/transactions', to: 'transactions#post', as: 'transactions_post'
 
 end
