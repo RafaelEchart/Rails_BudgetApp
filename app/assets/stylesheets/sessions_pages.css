@@ -97,3 +97,23 @@
 .final_margin {
   margin-top: 70px;
 }
+
+.error_color {
+  color: red;
+  text-shadow: 0 0 1px #212529;
+}
+
+.white_color {
+  color: white !important;
+  text-shadow: 0 0 6px #212529;
+
+}
+
+.flashMessage {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  text-align: center;
+  font-family: 'Circular-Loom', sans-serif;
+
+}

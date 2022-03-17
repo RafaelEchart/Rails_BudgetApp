@@ -2,6 +2,9 @@
 
 <%= render "partials/userheader", :title => "NEW TRANSACTION", :page => "new_transaction" %>
 
+    <%= render 'partials/messageflash'%>
+
+
 <%= form_with( model: @transactions, url: transactions_post_path, method: :post, local: true, id: "new_transaction") do |f| %>
 
   <div class="field">

@@ -1,6 +1,8 @@
 <body class="sessions_body">
 
 <%= render "partials/sessionsheaders", :message => "sign_in" %>
+    <%= render 'partials/messageflash'%>
+
 
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
   <div class="field">
