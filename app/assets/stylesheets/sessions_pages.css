@@ -106,7 +106,6 @@
 .white_color {
   color: white !important;
   text-shadow: 0 0 6px #212529;
-
 }
 
 .flashMessage {
@@ -115,5 +114,4 @@
   margin: 20px;
   text-align: center;
   font-family: 'Circular-Loom', sans-serif;
-
 }
