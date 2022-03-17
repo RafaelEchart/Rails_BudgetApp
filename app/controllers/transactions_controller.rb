@@ -41,8 +41,8 @@ class TransactionsController < ApplicationController
 
   def authorize_transaction(category)
     return unless category.user_id != current_user.id
-      flash[:error] = 'You have no access to this data!'
-      redirect_to categories_index_path
-    
+
+    flash[:error] = 'You have no access to this data!'
+    redirect_to categories_index_path
   end
 end
