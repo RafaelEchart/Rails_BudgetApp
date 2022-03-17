@@ -110,7 +110,7 @@
     
     #drawer ul a { 
     display:block; 
-    padding:10px; 
+    padding:10px 0px; 
     color:#c7c7c7; 
     text-decoration:none; 
     } 
@@ -140,3 +140,17 @@
     } 
     
     }
+    
+    .optionMenu {
+        background: transparent;
+        border: 0;
+        color: white;
+        font-size: 20px;
+        font-weight: 500;
+        cursor: pointer;
+      }
+      
+      .optionMenu:hover {
+        text-decoration: none;
+      }
+

@@ -6,7 +6,6 @@ class TransactionsController < ApplicationController
     @category = Category.find(id)
     authorize_transaction(@category)
 
-
     @transactions = EntityCategory.where(category_id: id).order(created_at: :desc)
   end
 
@@ -14,7 +13,6 @@ class TransactionsController < ApplicationController
     id = params[:category_id]
     @category = Category.find(id)
     authorize_transaction(@category)
-
 
     @transactions = Entity.new
   end
@@ -42,13 +40,9 @@ class TransactionsController < ApplicationController
   end
 
   def authorize_transaction(category)
-    if(category.user_id != current_user.id)
+    return unless category.user_id != current_user.id
       flash[:error] = 'You have no access to this data!'
       redirect_to categories_index_path
-    end
-  
+    
   end
-
-
-
 end
