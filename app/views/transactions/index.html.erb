@@ -1,1 +1,28 @@
-all categories transactions here
+<body class="sessions_body">
+<%= render "partials/userheader", :title => "TRANSACTIONS", :page => "" %>
+
+<div class="category_page_container">
+
+
+<div class="total_category_container info_cursor">
+<div class="total_category_left">
+<ion-icon name="cash-outline" class="category_icon-total"></ion-icon>
+<span class="">Category Expenses</span>
+</div>
+
+<span class="total_category_number">$<%= @category.total_amount(@category.entity_categories) %></span>
+
+</div>
+
+
+
+
+
+<div class="bottom_button">
+<div class="button_align">
+  <%= button_to "New transaction", transactions_create_path, class: "button_style", method: :get%>
+</div>
+</div>
+
+<div>
+</body>
