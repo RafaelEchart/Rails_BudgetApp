@@ -23,7 +23,7 @@
   padding: 11px;
   margin-top: 15px;
   background-color: white;
-  cursor:not-allowed;
+  cursor: not-allowed;
 }
 
 .sessions_input-photo:focus {
@@ -79,26 +79,21 @@
     font-size: 30px;
     color: #60b524;
     background-color: transparent;
-    border: 0px;
-    
-}
+    border: 0;
+  }
 
-.category_icon-item {
-  font-size: 30px;
+  .category_icon-item {
+    font-size: 30px;
     color: #2f67a8;
     background-color: transparent;
-    border: 0px;
-  
-}
+    border: 0;
+  }
 
-.total_category_number {
-  
-  font-size: larger;
-}
-
-
+  .total_category_number {
+    font-size: larger;
+  }
 }
 
 .final_margin {
-  margin-top:70px
+  margin-top: 70px;
 }

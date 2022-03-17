@@ -6,7 +6,6 @@ class Category < ApplicationRecord
   belongs_to :user
   has_many :entity_categories, foreign_key: :category_id
 
-
   def total_amount(array)
     total = 0
     array.each do |item|
@@ -14,5 +13,4 @@ class Category < ApplicationRecord
     end
     total
   end
-  
 end

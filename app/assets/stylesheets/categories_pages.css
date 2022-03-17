@@ -17,10 +17,6 @@
   cursor: pointer;
 }
 
-.total_category_container:last-of-class {
-  margin-bottom: 70px !important;
-}
-
 .total_category_left {
   display: flex;
   align-items: center;
@@ -80,19 +76,16 @@
   cursor: pointer;
 }
 
-
-.info_cursor{
+.info_cursor {
   cursor: help !important;
 }
 
 .field-select select {
-  
   padding: 11px;
-    border: 1px solid lightgray;
-    max-width: 624px;
-    min-width: 315px;
-    width: 83%;
-  
+  border: 1px solid lightgray;
+  max-width: 624px;
+  min-width: 315px;
+  width: 83%;
 }
 
 .field-select select:focus {

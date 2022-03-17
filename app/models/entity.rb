@@ -7,8 +7,4 @@ class Entity < ApplicationRecord
 
   belongs_to :user
   has_many :entity_categories, foreign_key: :entity_id
-
-
-
-
 end
