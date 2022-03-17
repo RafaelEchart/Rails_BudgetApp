@@ -73,3 +73,32 @@
   min-width: 316px;
   width: 84%;
 }
+
+@media only screen and (max-width: 500px) {
+  .category_icon-total {
+    font-size: 30px;
+    color: #60b524;
+    background-color: transparent;
+    border: 0px;
+    
+}
+
+.category_icon-item {
+  font-size: 30px;
+    color: #2f67a8;
+    background-color: transparent;
+    border: 0px;
+  
+}
+
+.total_category_number {
+  
+  font-size: larger;
+}
+
+
+}
+
+.final_margin {
+  margin-top:70px
+}

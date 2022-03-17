@@ -17,6 +17,10 @@
   cursor: pointer;
 }
 
+.total_category_container:last-of-class {
+  margin-bottom: 70px !important;
+}
+
 .total_category_left {
   display: flex;
   align-items: center;
