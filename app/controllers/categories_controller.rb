@@ -2,17 +2,17 @@ class CategoriesController < ApplicationController
   before_action :authenticate_user!
 
   def index
-    @categories = Group.where(user_id: current_user.id)
+    @categories = current_user.categories.includes(entity_categories: :entity)
   end
 
   def new
-    @category = Group.new
+    @category = Category.new
     @icons = [%w[Health medkit-outline], %w[Fun happy-outline], %w[Study book-outline],
               %w[Travel airplane-outline], %w[Gift gift-outline], %w[Personal person-outline]]
   end
 
   def post
-    @category = Group.new(user_id: current_user.id, name: params[:group][:name], icon: params[:group][:icon])
+    @category = Category.new(user_id: current_user.id, name: params[:category][:name], icon: params[:category][:icon])
 
     if @category.save
       flash[:success] = 'Category created successfully.'

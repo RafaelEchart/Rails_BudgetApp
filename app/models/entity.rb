@@ -6,5 +6,9 @@ class Entity < ApplicationRecord
                             message: 'Amount should be greater or equal to 0' }
 
   belongs_to :user
-  has_and_belongs_to_many :groups
+  has_many :entity_categories, foreign_key: :entity_id
+
+
+
+
 end

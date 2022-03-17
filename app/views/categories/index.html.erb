@@ -7,12 +7,28 @@
 
 <div class="total_category_container">
 <div class="total_category_left">
-<ion-icon name="bookmark-outline" class="category_icon"></ion-icon>
+<ion-icon name="bookmark-outline" class="category_icon-total"></ion-icon>
 <span class="">Total categories</span>
 </div>
 
-<span class="total_category_number">15</span>
+<span class="total_category_number"><%= @categories.length%></span>
 </div>
+
+<% @categories.each do |category|%>
+
+<div class="total_category_container" onClick="goToCategory(<%= category.id%>)">
+<div class="total_category_left">
+<ion-icon name="<%=category.icon%>" class="category_icon-item"></ion-icon>
+<span class=""><%=category.name%></span>
+</div>
+
+<span class="total_category_number">$<%= category.total_amount(category.entity_categories) %></span>
+</div>
+
+<% end%>
+
+
+
 
 
 <div class="bottom_button">

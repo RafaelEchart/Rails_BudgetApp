@@ -13,6 +13,8 @@
   padding: 15px;
   border-radius: 15px;
   width: 85%;
+  margin-bottom: 15px;
+  cursor: pointer;
 }
 
 .total_category_left {
@@ -32,7 +34,16 @@
   font-size: 30px;
 }
 
-.category_icon {
+.category_icon-total {
+  border: 1px solid #60b524;
+  border-radius: 20px;
+  padding: 10px;
+  font-size: 20px;
+  color: white;
+  background-color: #60b524;
+}
+
+.category_icon-item {
   border: 1px solid #2f67a8;
   border-radius: 20px;
   padding: 10px;

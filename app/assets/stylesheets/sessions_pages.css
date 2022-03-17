@@ -22,6 +22,8 @@
   border: 0;
   padding: 11px;
   margin-top: 15px;
+  background-color: white;
+  cursor:not-allowed;
 }
 
 .sessions_input-photo:focus {
