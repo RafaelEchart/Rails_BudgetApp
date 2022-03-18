@@ -10,12 +10,12 @@ describe 'User category page', type: :feature do
     visit '/categories'
     expect(page).to have_content('Total categories')
   end
-  
+
   it 'The category page should have div anchor tags to take you to the transaction page of that category' do
     visit '/categories'
     expect(page).to have_css('div')
   end
-  
+
   it 'The category page should have button to add new category' do
     visit '/categories'
     expect(page).to have_content('New Category')
@@ -27,10 +27,9 @@ describe 'User category page', type: :feature do
   end
 
   it 'I can see the username and password inputs and the "Log in" button.' do
-    visit "/categories/new"
+    visit '/categories/new'
     expect(page).to have_css("input[id$='category_name']")
     expect(page).to have_css("select[id$='category_icon']")
     expect(page).to have_content('Add')
   end
-
 end

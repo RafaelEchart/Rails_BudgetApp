@@ -5,7 +5,6 @@ describe 'Sign In', type: :feature do
   before :each do
     user = User.new(name: 'Rafael', email: 'email@test.com', password: '123456')
     user.save
-
   end
 
   it 'I can see the username and password inputs and the "Log in" button.' do
@@ -22,9 +21,8 @@ describe 'Sign In', type: :feature do
       fill_in 'user_email', with: ''
       fill_in 'user_password', with: ''
     end
-  
-    click_button 'Create User'
 
+    click_button 'Create User'
 
     expect(page).to have_content 'Invalid Email or password.'
   end
@@ -36,7 +34,6 @@ describe 'Sign In', type: :feature do
       fill_in 'user_password', with: 'incorrect'
     end
     click_button 'Create User'
-
 
     expect(page).to have_content 'Invalid Email or password.'
   end
