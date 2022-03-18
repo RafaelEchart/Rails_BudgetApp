@@ -115,3 +115,7 @@
   text-align: center;
   font-family: 'Circular-Loom', sans-serif;
 }
+
+.invisible-submit {
+  display: none;
+}
