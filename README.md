@@ -4,11 +4,12 @@
 
 > This is a mobile web application where you can manage your budget: Users have a list of transactions associated with a category, the user see how much money you spent and on what.
 
+<div>
 <img width="315" height="551" alt="portfolio_view" src="./assets/MyBudgetSplashScreen.png">
 <img width="315" height="551" alt="portfolio_view" src="./assets/loginScreen.png">
 <img width="315" height="551" alt="portfolio_view" src="./assets/allCategories.png">
 <img width="315" height="551" alt="portfolio_view" src="./assets/categoriesTransactions.png">
-
+</div>
 
 <details>
 
